@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>PDF To TXT Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- -------NAV BAR------- -->
+    <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+            <img class="menu"  src="images/icons8-menu-24.png" alt="">
+        </label>
+        <label class="logo">PDF to TXT</label>
+        <ul>
+            <li><a href="#convertSec">Convert</a></li>
+            <li><a href="#stepSec">Steps</a></li>
+            <li><a href="#memberSec">Group Members</a></li>
+        </ul>
+    </nav>
+
+    <!-- -------DRAG SECTION------- -->
+    <section class="convert" id="convertSec">
+        <div class="upload"></div>
+        <div class="drop-area" id="drop-area">
+            <img class="pdfIcon" src="images/icons8-pdf-64.png">
+            <p class="drop-text">Drag and drop file here</p>
+            <span class="drop-div">OR</span>
+            <div class="button-position">
+                <label class="button" id="button">
+                    <input type="file" name="fileToUpload" id="fileToUpload" autocomplete="off" accept="application/pdf"
+                        onclick=buttonHidden(download) oninput=uploads(fileToUpload.files)>
+                    Select file</label>
+            </div>
+
+
+            <div id='message'></div>
+            <span class=button id="refresh" style="visibility:hidden" onclick=reload()> Convert again </span>
+            <div class="download" id="download"></div>
+        </div>
+        
+
+        
+    </section>
+
+    <!-- -------STEP SECTION------- -->
+    <section class="steps" id="stepSec">
+            <h1>Steps</h1>
+        <div class="row">
+            <div class="column">
+                <h2>Step 1</h2>
+                <div class="image">
+                    <img src="images/icons8-pdf-64.png" alt="" />
+                </div>
+                <p>
+                    Upload your PDF files first. You can use 'drag and drop' to upload
+                    box or add a link to it
+                </p>
+            </div>
+
+            <div class="column">
+                <h2>Step 2</h2>
+                <div class="image">
+                    <img class="pdf" src="images/icons8-pdf-64.png" alt="" />
+                    <img class="arrow" src="images/icons8-curly-arrow-24.png" alt="" />
+                    <img src="images/icons8-txt-64.png" alt="" />
+                </div>
+                <p>
+                    Next, click the 'Start conversion' button, and wait for PDF to TXT
+                    conversion to finish.
+                </p>
+            </div>
+
+            <div class="column" id="col3">
+                <h2>Step 3</h2>
+                <div class="image">
+                    <img src="images/icons8-txt-64.png" alt="" />
+                </div>
+                <p>In the end, download your freshly converted TXT document files</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------GROUP MEMBER SECTION------- -->
+    <section class="member" id="memberSec">
+        <h1><span>Dev</span>eloper</h1>
+        <div class="mRow">
+            <div class="mColumn">
+                <img src="images/teamMem/den.png" alt="" />
+                <p>Danial Hakim <br> 152622</p>
+            </div>
+
+            <div class="mColumn">
+                <img src="images/teamMem/akma.png" alt="" />
+                <p>Akma Aqishah <br>152238</p>
+            </div>
+            <div class="mColumn">
+                <img src="images/teamMem/ipan.png" alt="" />
+                <p>Amirul Irfan <br> 154751 </p>
+            </div>
+
+            <div class="mColumn">
+                <img src="images/teamMem/aiman.png" alt="" />
+                <p>Aiman Rozali <br> 152993</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------FOOTER SECTION------- -->
+
+    <section class="footer">
+        <img class="usm" src="images/USMLogo.png" alt="" />
+
+        <div class="ftxt">
+            <p>CAT201 : INTEGRATED SOFTWARE DEVELOPMENT WORKSHOP</p>
+            <p>@Group20 2021</p>
+            <p>School Of Computer Sciences</p>
+            <p>Universiti Sains Malaysia</p>
+        </div>
+    </section>
+
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>

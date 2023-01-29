@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: dani41.Main
+Class-Path: pdfbox-2.0.24.jar debugger-app-2.0.24.jar
+

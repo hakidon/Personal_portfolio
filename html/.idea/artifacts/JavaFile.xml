@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact name="JavaFile">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaFile</output-path>
+    <root id="root">
+      <element id="file-copy" path="$PROJECT_DIR$/../debugger-app-2.0.24.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../pdfbox-2.0.24.jar" />
+      <element id="archive" name="JavaPdfTxt.jar">
+        <element id="module-output" name="untitled104" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
